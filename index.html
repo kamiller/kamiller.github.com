@@ -42,6 +42,8 @@
 		/* Remove annoying border on linked images. */
 		a img { border: none; }
 		
+		.spacer {clear: both;}
+		
 		/* ######################################################################### */
 		
 		html,
@@ -52,6 +54,7 @@
 /*  			font-family: 'Helvetica Neue', Helvetica, sans-serif;*/
   			font-family: Helvetica, sans-serif;
 			font-size: 1em;
+			min-height: 500px;
 		}
 		#wrapper {
 			min-height:100%;
@@ -79,11 +82,12 @@
 		#footer #bio { float: right; width: 300px; font-size: .8em; margin-top: .5em; margin-right: 1em;}
 		
 		#photo-logo img { float: left; margin-top: 189px; margin-left: 5%; width: 400px; height: 170px;}
-		#bps-logo img { float: right;  margin-top: 89px; margin-right: 5%; width: 300px; height: 413px;}
+		#bps-logo img { float: right;  margin-top: 89px; margin-right: 5%; width: 300px; height: 413px; padding-bottom: 89px;}
 	
 		@media screen and (max-width: 640px) {
 			#photo-logo img {margin: 0 auto; display:block; float:none; }				
 			#bps-logo img {margin: 30px auto; display:block; float:none; }
+		
 		}
 	
 		@media screen and (max-width: 800px) {
@@ -110,7 +114,9 @@
 	
 			</div>
 			
-			<div id="footer">
+			<div class="spacer">&nbsp;</div>
+			
+			<div id="footer" class="spacer">
 				<div id="twitter">
 					<a href="https://twitter.com/kyleamiller" class="twitter-follow-button" data-show-count="false" data-lang="en" data-show-screen-name="false" data-dnt="true">Follow</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
