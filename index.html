@@ -36,6 +36,8 @@
 		/* Remove possible quote marks (") from <q>, <blockquote>. */
 		blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 		blockquote, q { quotes: "" ""; }
+		
+		h1,h2,h3,h4,h5,h6 {font-weight: bold;}
 
 		/* Remove annoying border on linked images. */
 		a img { border: none; }
@@ -49,6 +51,7 @@
 			height:100%;
 /*  			font-family: 'Helvetica Neue', Helvetica, sans-serif;*/
   			font-family: Helvetica, sans-serif;
+			font-size: 1em;
 		}
 		#wrapper {
 			min-height:100%;
@@ -72,40 +75,49 @@
 			color:#555;
 		}
 				
-		#footer #twitter {margin-top: 2em;margin-left: 1em;}
+		#footer #twitter {float: left; margin-top: 2em;}
+		#footer #bio { float: right; width: 300px; font-size: .8em; margin-top: .5em;}
 		
-		#photo-logo {
-	        width: 400px;
-	        margin:0 auto;
-	        margin-top: 50px;
-	    }
-
-	    #bps-logo {
-	        width: 300px;
-	        margin:0 auto;
-	        margin-top: 25px;
-	    }
+		#photo-logo img { float: left; margin-top: 189px; margin-left: 5%; width: 400px; height: 170px;}
+		#bps-logo img { float: right;  margin-top: 89px; margin-right: 5%; width: 300px; height: 413px;}
+	
+		@media screen and (max-width: 640px) {
+			#photo-logo img {margin: 0 auto; display:block; float:none; }				
+			#bps-logo img {margin: 30px auto; display:block; float:none; }
+		}
+	
+		@media screen and (max-width: 800px) {
+			#photo-logo img { width: 300px; height: 128px;}				
+			#bps-logo img { width: 250px; height: 344px; }
+		}
+	
+		@media screen and (min-width: 1200px) {
+			#photo-logo img {margin-left: 10%; width: 500px; height: 213px;}
+			#bps-logo img {margin-right: 10%; width: 400px; height: 550px;}
+		}
 	    
 		</style>
 	</head>
 	<body>
 
 		<div id="wrapper">
-			<a href="https://github.com/kamiller"><img style="position: absolute; top: 0; right: 0; border: 0;" src="fork-me.png" alt="Fork me on GitHub"></a>
+			<a href="https://github.com/kamiller"><img style="position: absolute; top: 0; right: 0; border: 0;" src="fork-me.png" alt="Fork me on GitHub"></a>      
+			
 			<div id="content">
-		        <div id="photo-logo">
-		        	<a href="http://photography.kylemiller.com"><img src="http://photos.kylemiller.com/photos/851171715_HNYUN-S-1.png" /></a>
-		        </div>
-        
-		        <div id="bps-logo">
-		        	<a href="http://backupparachute.com"><img src="bps-logo.png" width="300px" height="533px"/></a>
-	        	</div>
+				
+				<a href="http://photography.kylemiller.com" id="photo-logo"><img src="http://photos.kylemiller.com/photos/851171715_HNYUN-L-1.png" /></a>
+				<a href="http://backupparachute.com" id="bps-logo"><img src="bps-logo.png" /></a>
+	
 			</div>
 			
 			<div id="footer">
 				<div id="twitter">
 					<a href="https://twitter.com/kyleamiller" class="twitter-follow-button" data-show-count="false" data-lang="en" data-show-screen-name="false" data-dnt="true">Follow</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+				<div id="bio">
+					<h3>About:</h3>
+					<p>Seasoned software engineer with many different titles including partner and founder, currently focusing on photography and my second business.</p>
 				</div>
 			</div>
 		</div>
