@@ -1,5 +1,7 @@
 gems:
   - jekyll-sitemap
+  - jekyll-menus
+
 
 # Outputting
 permalink: pretty
