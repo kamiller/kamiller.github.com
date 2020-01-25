@@ -50,11 +50,22 @@ a.link:hover {
   text-decoration: underline;
 }
 
+
+/* Content / Footer / Flex
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
 .content {
-  min-height: calc(100vh - 90px);
+  flex: 1 0 auto;
 }
 .footer {
-  height: 90px;
+  flex-shrink: 0;
 }
 
 /* Sections
