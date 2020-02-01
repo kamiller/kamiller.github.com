@@ -109,6 +109,7 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+  text-align: left;
 }
 
 /* Hero
