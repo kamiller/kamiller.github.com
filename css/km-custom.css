@@ -69,6 +69,10 @@ body {
   flex-shrink: 0;
   height: 90px;
   max-height: 90px;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .content {
   flex: 2 0 auto;
