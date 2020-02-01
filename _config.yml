@@ -5,3 +5,8 @@ plugins:
 
 # Outputting
 permalink: pretty
+
+collections:
+  quotes:
+    output: true
+    permalink: pretty
