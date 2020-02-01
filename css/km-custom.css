@@ -9,7 +9,7 @@
 .u-room-left { margin-left: 1em; }
 .u-room-right { margin-right: 1em; }
 
-.u-align-bottom {vertical-align: bottom !important;}
+.u-align-bottom {bottom: 1em;}
 
 .debug { border: 1px solid red !important; }
 
