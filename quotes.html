@@ -19,8 +19,8 @@ title: Quotes
 </blockquote>
 <div class="u-pull-right">
   &mdash; <a href="{{ quote.url }}">{{ quote.cite }}</a>
-  {% if page.reference != nil %}
-  <a href="{{ quote.reference }}"><small>ref</small></a>
+  {% if quote.reference != nil %}
+  <a href="{{ quote.reference }}"><i class="fas fa-external-link-square-alt"></i></a>
   {% endif %}
 </div>
       </div>
