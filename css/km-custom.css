@@ -40,8 +40,8 @@ ul.inline.room > li:not(:last-child) {
 .text-left { text-align: left;}
 .text-center { text-align: center;}
 .center {
-  display: block;
-  margin: 0 auto;
+  display: block !important;
+  margin: 0 auto !important;
 }
 
 .text-light { color: #fff !important;}
