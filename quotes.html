@@ -7,8 +7,6 @@ title: Quotes
 {% for quote in site.quotes %}
 <blockquote cite="">
   <p>{{ quote.content | markdownify }}</p>
-  <a href="{{ quote.url }}">
-  &mdash; {{ quote.cite }}
-  </a>
+  &mdash; <a href="{{ quote.url }}">{{ quote.cite }}</a>
 </blockquote>
 {% endfor %}
