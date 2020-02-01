@@ -39,6 +39,10 @@ ul.inline.room > li:not(:last-child) {
 .text-right { text-align: right;}
 .text-left { text-align: left;}
 .text-center { text-align: center;}
+.center {
+  display: block;
+  margin: 0 auto;
+}
 
 .text-light { color: #fff !important;}
 .text-dark { color: #222 !important;}
