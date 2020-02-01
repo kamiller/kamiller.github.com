@@ -15,12 +15,12 @@ layout: default
 
 				<div class="post">
 
-				{% if post.type == "quote" %}
+				{% if post.category == "quote" %}
 
 	<blockquote class="text-left">
 		<i class="fas fa-quote-left fa-3x"></i> {{ post.content | markdownify }}
 	</blockquote>
-	{% elsif post.type == "bookmark" %}
+	{% elsif post.category == "bookmark" %}
 		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
 	{% else %}
 		{{ post.content | markdownify }}
