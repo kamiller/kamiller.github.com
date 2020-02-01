@@ -115,13 +115,16 @@ section.shaded {
   text-align: left;
 }
 
-.post .fas {
+.post svg {
   color: #ccc;
   display: inline-block;
   margin-right: 1em;
 }
 
-.post p {
+/* Bookmarks
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.post .bookmark p {
   display: inline-block;
 }
 
