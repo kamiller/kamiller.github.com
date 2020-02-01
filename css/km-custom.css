@@ -6,6 +6,12 @@
 .u-room-head { margin-top: 1em; }
 .u-room-head-more { margin-top: 2em; }
 
+.u-max-full-width-height {
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box; }
+
+
 .debug { border: 1px solid red !important; }
 
 .button {
