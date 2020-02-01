@@ -1,23 +1,31 @@
 ---
 layout: default
 ---
-			<section>
-				<div class="container">
-					<div class="row">
-						<div class="six columns ">
-							<a href="http://photography.kylemiller.com">
-								<img class="u-max-full-width" src="http://photos.kylemiller.com/photos/851171715_HNYUN-L-1.png" />
-							</a>
+<section>
+  <div class="container">
+    <div class="row">
+     <div class="twelve columns">
+      <h2>Quotes</h2>
+     </div>
+    </div>
 
+{% for post in site.posts %}
+    <div class="row">
+      <div class="twelve columns">
 
-						</div>
-						<div class="six columns u-room-head-more">
-							<a href="http://backupparachute.com">
-								<img class="u-max-full-width" src="http://backupparachute.com/images/bps-logo-green.png" />
-							</a>
-						</div>
+<blockquote class="text-left">
+  {{ post.content | markdownify }}
+</blockquote>
+<div class="u-pull-right">
+  &mdash; <a href="{{ post.url }}">{{ post.cite }}</a>
+  {% if post.reference != nil %}
+  <a href="{{ post.reference }}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+  {% endif %}
+</div>
 
-					</div>
+      </div>
+    </div>
+{% endfor %}
 
-				</div>
-			</section>
+  </div>
+</section>

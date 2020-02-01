@@ -14,6 +14,7 @@ title: Quotes
 {% for quote in site.quotes %}
     <div class="row">
       <div class="twelve columns">
+
 <blockquote class="text-left">
   {{ quote.content | markdownify }}
 </blockquote>
@@ -23,6 +24,7 @@ title: Quotes
   <a href="{{ quote.reference }}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
   {% endif %}
 </div>
+
       </div>
     </div>
 {% endfor %}

@@ -1,12 +1,12 @@
-# plugins:
-  # - jekyll-sitemap
+plugins:
+  - jekyll-sitemap
   # - jekyll-menus
 
 
 # Outputting
 permalink: pretty
 
-collections:
-  quotes:
-    output: true
-    permalink: quotes/:year/:month/:day/:title
+# collections:
+#   quotes:
+#     output: true
+#     permalink: quotes/:year/:month/:day/:title
