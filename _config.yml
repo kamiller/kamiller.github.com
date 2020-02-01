@@ -1,6 +1,6 @@
-plugins:
-  - jekyll-sitemap
-  - jekyll-menus
+# plugins:
+  # - jekyll-sitemap
+  # - jekyll-menus
 
 
 # Outputting
