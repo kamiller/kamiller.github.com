@@ -18,10 +18,10 @@ layout: default
 				{% if post.type == "quote" %}
 
 	<blockquote class="text-left">
-		<i class="fas fa-quote-left"></i> {{ post.content | markdownify }}
+		<i class="fas fa-quote-left fa-3x"></i> {{ post.content | markdownify }}
 	</blockquote>
 	{% elsif post.type == "bookmark" %}
-		<i class="fas fa-bookmark"></i> {{ post.content | markdownify }}
+		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
 	{% else %}
 		{{ post.content | markdownify }}
 	{% endif %}
