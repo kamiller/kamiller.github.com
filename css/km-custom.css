@@ -63,16 +63,22 @@ body {
 }
 .header {
   flex-shrink: 0;
+  max-height: 90px;
 }
 .content {
   flex: 2 0 auto;
 }
 .footer {
   flex-shrink: 0;
+  max-height: 90px;
 }
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container.full-width {
+  max-width: 100%;
+}
+
 section {
   padding: 4rem 0 3rem;
   text-align: center;
