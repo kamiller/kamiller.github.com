@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+<blockquote class="text-left">
+  {{ content | markdownify }}
+</blockquote>
+<div class="u-pull-right">
+  &mdash; <a href="{{ page.url }}">{{ page.cite }}</a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
