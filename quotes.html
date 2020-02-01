@@ -1,10 +1,14 @@
+---
+title: Quotes
+---
+
 <h3>Quotes</h3>
 
-{% for quote in site.quotes %}
+{{% for quote in site.quotes %}}
 <blockquote cite="">
   <p>{{ quote.content | markdownify }}</p>
   <a href="{{ quote.url }}">
   &mdash {{ quote.cite }}
   </a>
 </blockquote>
-{% endfor %}
+{{% endfor %}}
