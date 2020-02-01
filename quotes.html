@@ -1,12 +1,28 @@
 ---
+layout: default
 title: Quotes
 ---
 
-<h3>Quotes</h3>
+<section>
+  <div class="container">
+    <div class="row">
+     <div class="twelve columns">
+      <h2>Quotes</h2>
+     </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
 
 {% for quote in site.quotes %}
 <blockquote cite="">
-  <p>{{ quote.content | markdownify }}</p>
-  &mdash; <a href="{{ quote.url }}">{{ quote.cite }}</a>
+  {{ quote.content | markdownify }}
 </blockquote>
+<div class="u-pull-right">
+  &mdash; <a href="{{ quote.url }}">{{ quote.cite }}</a>
+</div>
 {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</section>
