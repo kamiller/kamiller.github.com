@@ -6,6 +6,9 @@
 .u-room-head { margin-top: 1em; }
 .u-room-head-more { margin-top: 2em; }
 
+.u-room-left { margin-left: 1em; }
+.u-room-right { margin-right: 1em; }
+
 .debug { border: 1px solid red !important; }
 
 .button {
@@ -69,7 +72,6 @@ body {
   flex-shrink: 0;
   height: 90px;
   max-height: 90px;
-  padding-right: 5px;
 }
 .content {
   flex: 2 0 auto;
@@ -78,7 +80,6 @@ body {
   flex-shrink: 0;
   height: 90px;
   max-height: 90px;
-  padding-right: 5px;
 }
 
 /* Sections
