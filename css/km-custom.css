@@ -5,10 +5,12 @@
 .u-room-more { margin-bottom: 2em; }
 .u-room-head { margin-top: 1em; }
 .u-room-head-more { margin-top: 2em; }
-.u-room-head-slight { margin-top: 5px; }
+.u-room-head-slim { margin-top: 5px; }
 
 .u-room-left { margin-left: 1em; }
+.u-room-left-slim { margin-left: 5px; }
 .u-room-right { margin-right: 1em; }
+.u-room-right-slim { margin-right: 5px; }
 
 .debug { border: 1px solid red !important; }
 

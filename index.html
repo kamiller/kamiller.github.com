@@ -13,15 +13,22 @@ layout: default
     <div class="row">
       <div class="twelve columns">
 
-<blockquote class="text-left">
-  {{ post.content | markdownify }}
-</blockquote>
-<div class="u-pull-right">
-  &mdash; <a href="{{ post.url }}">{{ post.cite }}</a>
-  {% if post.reference != nil %}
-  <a href="{{ post.reference }}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-  {% endif %}
-</div>
+				{% if post.type == "quote" %}
+
+	<blockquote class="text-left">
+	  {{ post.content | markdownify }}
+	</blockquote>
+	
+	{% else %}
+		{{ post.content | markdownify }}
+	{% endif %}
+
+	<div class="u-pull-right">
+	  &mdash; <a href="{{ post.url }}">{{ post.cite }}</a>
+	  {% if post.reference != nil %}
+	  <a href="{{ post.reference }}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+	  {% endif %}
+	</div>
 
       </div>
     </div>
