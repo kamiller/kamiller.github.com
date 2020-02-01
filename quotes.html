@@ -10,19 +10,22 @@ title: Quotes
       <h2>Quotes</h2>
      </div>
     </div>
-    <div class="row">
-      <div class="twelve columns">
 
 {% for quote in site.quotes %}
+    <div class="row">
+      <div class="twelve columns">
 <blockquote class="text-left">
   {{ quote.content | markdownify }}
 </blockquote>
 <div class="u-pull-right">
   &mdash; <a href="{{ quote.url }}">{{ quote.cite }}</a>
+  {% if page.reference != nil %}
+  <a href="{{ quote.reference }}"><small>ref</small></a>
+  {% endif %}
 </div>
-{% endfor %}
-
       </div>
     </div>
+{% endfor %}
+
   </div>
 </section>
