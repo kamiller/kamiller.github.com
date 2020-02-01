@@ -9,4 +9,4 @@ permalink: pretty
 collections:
   quotes:
     output: true
-    permalink: quotes/:year/:month/:day/title
+    permalink: quotes/:year/:month/:day/:title
