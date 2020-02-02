@@ -22,6 +22,11 @@ layout: default
 		</blockquote>
 	{% elsif post.category == "bookmark" %}
 	<div class="bookmark">
+		<div class="u-pull-right">
+			<small>
+				{{post.title}} - {{post.date}}
+			</small>
+		</div>
 		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
 	</div>
 	{% else %}
