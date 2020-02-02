@@ -22,6 +22,7 @@ layout: default
 
   {% if page.cite != nil %}
   <div class="">
+    <div class="u-cf">&nbsp;</div>
     <span class="u-pull-right">
     {% if page.reference != nil %}
     &mdash; <a href="{{ page.reference }}" target="_blank">{{ page.cite }}</a>
@@ -29,7 +30,7 @@ layout: default
     &mdash; {{ page.cite }}
     {% endif %}
     </span>
-    <div class="u-cf">&nbsp;</div>
+    <span class="u-cf">&nbsp;</span>
   </div>
   {% endif %}
 
