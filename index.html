@@ -14,11 +14,6 @@ layout: default
       <div class="twelve columns">
 
 				<div class="post">
-					<div class="u-pull-right">
-						<small>
-							<a href="{{ post.url }}">{{post.title}}</a> - {{ post.date | date: '%Y-%m-%d' }}
-						</small>
-					</div>
 
 				{% if post.category == "quote" %}
 
@@ -27,9 +22,19 @@ layout: default
 		</blockquote>
 	{% elsif post.category == "bookmark" %}
 	<div class="bookmark">
+		<div class="u-pull-right">
+			<small>
+				<a href="{{ post.url }}">{{post.title}}</a> - {{ post.date | date: '%Y-%m-%d' }}
+			</small>
+		</div>
 		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
 	</div>
 	{% else %}
+		<div class="u-pull-right">
+			<small>
+				<a href="{{ post.url }}">{{post.title}}</a> - {{ post.date | date: '%Y-%m-%d' }}
+			</small>
+		</div>
 		{{ post.content | markdownify }}
 	{% endif %}
 
