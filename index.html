@@ -27,7 +27,8 @@ layout: default
 			<i class="fas fa-quote-left fa-3x"></i> {{ post.content | markdownify }}
 
 			{% if post.cite != nil %}
-			<div class="">
+			<div class="cite">
+		    <div class="u-cf">&nbsp;</div>
 				<span class="u-pull-right">
 				{% if post.reference != nil %}
 				&mdash; <a href="{{ post.reference }}" target="_blank">{{ post.cite }}</a>
@@ -35,7 +36,6 @@ layout: default
 				&mdash; {{ post.cite }}
 				{% endif %}
 				</span>
-				<div class="u-cf">&nbsp;</div>
 			</div>
 			{% endif %}
 
