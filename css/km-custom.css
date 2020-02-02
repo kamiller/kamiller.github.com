@@ -149,6 +149,8 @@ blockquote p {
   display: inline;
 }
 
+.cite { padding-bottom: 10px;}
+
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*.phones {
