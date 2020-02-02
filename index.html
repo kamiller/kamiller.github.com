@@ -13,7 +13,7 @@ layout: default
     <div class="row">
       <div class="twelve columns">
 
-				<div class="post">
+				<div class="post u-cf">
 
 				{% if post.category == "quote" %}
 
@@ -39,7 +39,6 @@ layout: default
 			</small>
 		</div>
 		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
-		<hr />
 
 	</div>
 	{% else %}
@@ -49,12 +48,13 @@ layout: default
 			</small>
 		</div>
 		{{ post.content | markdownify }}
-		<hr />
 
 	{% endif %}
 
 
 				</div>
+
+				<hr class="u-cf" />
 
 
       </div>
