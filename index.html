@@ -13,7 +13,7 @@ layout: default
     <div class="row">
       <div class="twelve columns">
 
-				<div class="post u-cf">
+				<div class="post">
 
 				{% if post.category == "quote" %}
 
@@ -22,7 +22,7 @@ layout: default
 		</blockquote>
 
 		{% if post.cite != nil %}
-		<div class="u-pull-right u-cf">
+		<div class="u-pull-right">
 			{% if post.reference != nil %}
 			&mdash; <a href="{{ post.reference }}" target="_blank">{{ post.cite }}</a>
 			{% else %}
