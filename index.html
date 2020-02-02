@@ -24,7 +24,7 @@ layout: default
 	<div class="bookmark">
 		<div class="u-pull-right">
 			<small>
-				{{post.title}} - {{ post.date | date: '%Y-%m-%d' }}
+				<a href="{{ post.url }}">{{post.title}}</a> - {{ post.date | date: '%Y-%m-%d' }}
 			</small>
 		</div>
 		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
@@ -32,7 +32,7 @@ layout: default
 	{% else %}
 		<div class="u-pull-right">
 			<small>
-				{{post.title}} - {{ post.date | date: '%Y-%m-%d' }}
+				<a href="{{ post.url }}">{{post.title}}</a> - {{ post.date | date: '%Y-%m-%d' }}
 			</small>
 		</div>
 		{{ post.content | markdownify }}
