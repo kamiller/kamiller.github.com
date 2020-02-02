@@ -133,7 +133,7 @@ section.shaded {
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
-  margin: 1.5em 10px 1.5em 0;
+  margin: 1.5em 0px 1.5em 0;
   padding: 0.5em 10px 1em;
   /* quotes: "\201C""\201D""\2018""\2019"; */
 }
