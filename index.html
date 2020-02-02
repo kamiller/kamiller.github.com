@@ -19,17 +19,21 @@ layout: default
 
 		<blockquote class="text-left">
 			<i class="fas fa-quote-left fa-3x"></i> {{ post.content | markdownify }}
+
+			{% if post.cite != nil %}
+			<div class="">
+				<span class="u-pull-right">
+				{% if post.reference != nil %}
+				&mdash; <a href="{{ post.reference }}" target="_blank">{{ post.cite }}</a>
+				{% else %}
+				&mdash; {{ post.cite }}
+				{% endif %}
+				</span>
+			</div>
+			{% endif %}
+
 		</blockquote>
 
-		{% if post.cite != nil %}
-		<div class="u-pull-right">
-			{% if post.reference != nil %}
-			&mdash; <a href="{{ post.reference }}" target="_blank">{{ post.cite }}</a>
-			{% else %}
-			&mdash; {{ post.cite }}
-			{% endif %}
-		</div>
-		{% endif %}
 
 	{% elsif post.category == "bookmark" %}
 	<div class="bookmark">
@@ -41,6 +45,7 @@ layout: default
 		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
 
 	</div>
+		<hr />
 	{% else %}
 		<div class="u-pull-right">
 			<small>
@@ -49,13 +54,11 @@ layout: default
 		</div>
 		{{ post.content | markdownify }}
 
+		<hr />
 	{% endif %}
 
 
 				</div>
-
-				<hr class="u-cf" />
-
 
       </div>
     </div>
