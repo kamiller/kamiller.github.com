@@ -17,9 +17,9 @@ layout: default
 
 				{% if post.category == "quote" %}
 
-	<blockquote class="text-left">
-		<i class="fas fa-quote-left fa-3x"></i> {{ post.content | markdownify }}
-	</blockquote>
+		<blockquote class="text-left">
+			<i class="fas fa-quote-left fa-3x"></i> {{ post.content | markdownify }}
+		</blockquote>
 	{% elsif post.category == "bookmark" %}
 	<div class="bookmark">
 		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
