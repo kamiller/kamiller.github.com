@@ -6,6 +6,11 @@
 # Outputting
 permalink: pretty
 
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://kylemiller.com/'
+  media: 'images'
+
 # collections:
 #   quotes:
 #     output: true
