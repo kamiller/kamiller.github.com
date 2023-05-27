@@ -5,8 +5,7 @@ tags: [business]
 category: bookmark
 ---
 
-[https://world.hey.com/jason/founder-ceo-is-kinda-a-bs-title-9fe101e9](https://world.hey.com/jason/founder-ceo-is-kinda-a-bs-title-9fe101e9)
-
+[Founder & CEO is kinda a BS title](https://world.hey.com/jason/founder-ceo-is-kinda-a-bs-title-9fe101e9)
 
 > I've come to believe it's an impossible title. You're either CEO, or you're Founder. You can't hold both full-time jobs.
 

@@ -5,7 +5,7 @@ tags: [programming,patterns]
 category: bookmark
 ---
 
-[https://mattbrictson.com/blog/gateway-pattern](https://mattbrictson.com/blog/gateway-pattern)
+[Gateway Pattern](https://mattbrictson.com/blog/gateway-pattern)
 
 > Use gateway classes to organize external API integrations and establish a clearer separation of concerns.
 

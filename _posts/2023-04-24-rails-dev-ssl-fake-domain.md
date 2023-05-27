@@ -5,7 +5,7 @@ tags: [rails,programming]
 category: bookmark
 ---
 
-[https://blog.cloud66.com/running-rails-development-with-a-fake-domain-and-ssl](hhttps://blog.cloud66.com/running-rails-development-with-a-fake-domain-and-ssl)
+[Running Rails Development with a Fake Domain and SSL](hhttps://blog.cloud66.com/running-rails-development-with-a-fake-domain-and-ssl)
 
 Running Rails Development with a Fake Domain and SSL
 
