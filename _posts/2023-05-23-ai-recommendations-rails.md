@@ -5,8 +5,9 @@ tags: [programming,rails,ai,openai]
 category: bookmark
 ---
 
-[How-To Add Recommendations to a Rails App with pgvector and OpenAI](https://medium.com/@mauricio/how-to-add-recommendations-to-a-rails-app-with-pgvector-and-openai-881d87915fb2)
+[How-To Add Recommendations to a Rails App with pgvector and OpenAI](https://medium.com/@mauricio/how-to-add-recommendations-to-a-rails-app-with-pgvector-and-openai-881d87915fb2)  
 
+<br>
 
 **Gems**
 
