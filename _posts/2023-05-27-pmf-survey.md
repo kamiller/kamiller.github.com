@@ -5,10 +5,9 @@ tags: [programming,patterns]
 category: bookmark
 ---
 
-[Product Market Fit Survey](https://pmfsurvey.com/)  
-    
+[Product Market Fit Survey](https://pmfsurvey.com/)<br>
 
-*How would you feel if you could no longer use [product]?*
+<br>*How would you feel if you could no longer use [product]?*
 
 - Very disappointed
 - Somewhat disappointed
