@@ -7,6 +7,7 @@ category: bookmark
 
 [Product Market Fit Survey](https://pmfsurvey.com/)
 
+
 *How would you feel if you could no longer use [product]?*
 
 - Very disappointed
