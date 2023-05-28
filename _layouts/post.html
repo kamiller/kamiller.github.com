@@ -43,6 +43,7 @@ layout: default
     <a href="{{ page.url }}">{{page.title}}</a> - {{ page.date | date: '%Y-%m-%d' }}
   </small>
 </div>
+
 <i class="fas fa-bookmark fa-3x"></i> {{ page.content | markdownify }}
 
 </div>
@@ -53,9 +54,7 @@ layout: default
     <a href="{{ page.url }}">{{page.title}}</a> - {{ page.date | date: '%Y-%m-%d' }}
   </small>
 </div>
-<div class="bookmark-content">
 {{ page.content | markdownify }}
-</div>
 
 <hr />
 {% endif %}
