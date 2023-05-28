@@ -5,7 +5,6 @@ tags: [rails,programming]
 category: bookmark
 ---
 
-[Active Record Advanced Concepts](https://blog.rubyhero.dev/advanced-active-record)<br>
+[Active Record Advanced Concepts](https://blog.rubyhero.dev/advanced-active-record)
 
-
-<br>Optimizing Performance and Robustness with Locking, UUIDs, Fulltext Search, Database Views, and Geospatial Data
+> Optimizing Performance and Robustness with Locking, UUIDs, Fulltext Search, Database Views, and Geospatial Data
