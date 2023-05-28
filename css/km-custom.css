@@ -151,6 +151,15 @@ blockquote p {
 
 .cite { padding-bottom: 10px;}
 
+/* bookmark custom
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.bookmark-content a {
+  display: block;
+  margin-bottom: 1em;
+}
+
+
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*.phones {
