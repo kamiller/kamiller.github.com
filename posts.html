@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<section>
+  <div class="container">
+    <!-- <div class="row">
+     <div class="twelve columns">
+      <h2>Quotes</h2>
+     </div>
+    </div> -->
+
+{% for post in site.posts %}
+    <div class="row">
+      <div class="twelve columns">
+
+				<div class="post">
+
+				{% if post.category == "quote" %}
+
+		<blockquote class="text-left">
+			<div class="u-pull-right">
+				<small>
+					<a href="{{ post.url }}">{{ post.date | date: '%Y-%m-%d' }}</a>
+				</small>
+			</div>
+
+			<i class="fas fa-quote-left fa-3x"></i> {{ post.content | markdownify }}
+
+			{% if post.cite != nil %}
+			<div class="cite">
+		    <div class="u-cf">&nbsp;</div>
+				<span class="u-pull-right">
+				{% if post.reference != nil %}
+				&mdash; <a href="{{ post.reference }}" target="_blank">{{ post.cite }}</a>
+				{% else %}
+				&mdash; {{ post.cite }}
+				{% endif %}
+				</span>
+			</div>
+			{% endif %}
+
+		</blockquote>
+
+
+	{% elsif post.category == "bookmark" %}
+	<div class="bookmark">
+		<div class="u-pull-right">
+			<small>
+				<a href="{{ post.url }}">{{post.title}}</a> - {{ post.date | date: '%Y-%m-%d' }}
+			</small>
+		</div>
+		<i class="fas fa-bookmark fa-3x"></i> {{ post.content | markdownify }}
+
+	</div>
+		<hr />
+	{% else %}
+		<div class="u-pull-right">
+			<small>
+				<a href="{{ post.url }}">{{post.title}}</a> - {{ post.date | date: '%Y-%m-%d' }}
+			</small>
+		</div>
+		{{ post.content | markdownify }}
+
+		<hr />
+	{% endif %}
+
+
+				</div>
+
+      </div>
+    </div>
+{% endfor %}
+
+  </div>
+</section>
