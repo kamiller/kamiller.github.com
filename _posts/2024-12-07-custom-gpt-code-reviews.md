@@ -5,6 +5,6 @@ tags: [programming,gpt,ruby,ai]
 category: bookmark
 ---
 
-https://cookbook.openai.com/examples/chatgpt/gpt_actions_library/gpt_action_github
+[GPT Cookbook: Github Pull Request Reviewer](https://cookbook.openai.com/examples/chatgpt/gpt_actions_library/gpt_action_github)
 
 > Create a custom GPT to review / analyze github pull requests
